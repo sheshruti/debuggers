@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="first.css" /> 
+     <title> GET SECOND HAND BOOKS</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
+     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" 
+     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 140px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid yellow;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+form.example button {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  background-color:green;
+  color: white;
+  font-size: 17px;
+  border: 1px solid white;
+  border-left: none;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: none;
+}
+
+form.example button:hover {
+  background: green;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+</head>
+<body> 
+    <nav>
+        <div class="logo">
+         <h3 > USED BOOKS</h3>
+        
+        </div>
+        <form class="example"    action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <ul  class="nav-links">
+
+              <li >
+                <a href="#"> <i class="fas fa-home"></i>Home</a>
+              </li>
+              <li>
+                <a href="#"> <i class="fas fa-address-card"></i>About us</a>
+              </li>
+              <li>
+                <a href="#"> <i class="fas fa-laptop-house"></i>Works</a>
+              </li>
+              <li>
+                <a href="#"> <i class="fas fa-hands-helping"></i>Help</a>
+              </li>
+              <li>
+                <a href="#"> <i class="fab fa-sellcast"></i>Sell Old Books</a>
+              </li>
+        </ul>
+        <div class="burger">
+           <div class="line 1"></div>
+           <div class="line 2"></div>
+           <div class="line 3"></div>
+        </div>
+    </nav>
+   <script src="web.js"></script>
+  
+   <h1> <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Engineering</a>
+    <a href="#">Fiction & Literature</a>
+    <a href="#">Foreign Language & study Aids </a>
+    <a href="#">Health,Mind & Body</a>
+    <a href="#">History</a>
+    <a href="#">Religion & sprituality</a>
+    <a href="#">Romance</a>
+    <a href="#">Self-Help</a>
+    <a href="#">Arts & Entertainment</a>
+    <a href="#">Biographies & Memoirs</a>
+    <a href="#"> Bussiness & Investing</a>
+    <a href="#">Children's Books</a>
+    <a href="#">Comics</a>
+    <a href="#">Computer & Technology</a>
+    <a href="#">Cookery & Food</a> 
+  </div>
+  
+  
+  <span class="new-content" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Contents</span>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+  }
+  </script>
+      </h1>
+      <div class="owl-carousel owl-theme">
+        <div class="item"><h4>1</h4></div>
+        <div class="item"><h4>2</h4></div>
+        <div class="item"><h4>3</h4></div>
+        <div class="item"><h4>4</h4></div>
+        <div class="item"><h4>5</h4></div>
+        <div class="item"><h4>6</h4></div>
+        <div class="item"><h4>7</h4></div>
+        <div class="item"><h4>8</h4></div>
+        <div class="item"><h4>9</h4></div>
+        <div class="item"><h4>10</h4></div>
+        <div class="item"><h4>11</h4></div>
+        <div class="item"><h4>12</h4></div>
+    </div>
+
+   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>                              
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity=
+      "sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw
+      ==" crossorigin="anonymous"></script>
+     
+      <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+      
+</script>      
+
+
+</body>
+</html>
