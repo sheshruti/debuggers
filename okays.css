@@ -184,11 +184,7 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
-.options:hover p{
-    background-color:azure ;
-    color: khaki;
-    
-}
+
 .lang{
     width: 90%;
     margin: 2%;
