@@ -39,6 +39,7 @@ text-decoration: none;
 letter-spacing: 3px;
 font-weight: bold;
 font-size: 14px;
+padding-top: 10px;
 
 }
 .burger div{
@@ -179,9 +180,9 @@ opacity: 1;
   color: black;
   margin-top :10px;
  margin-bottom: 20px;
- border-bottom: 3px;
- border-color: red;
- text-align: center;
+ border-bottom:5px solid mediumturquoise;
+ margin-left: 260px;
+ margin-right: 10%;
 
  }
 
@@ -189,17 +190,19 @@ opacity: 1;
  
 #new-button {
   border-width: 3px;
-  
-border-radius: 10px;
+  margin-right: 0px;
+border-radius: 20px;
 border-color:black;
 background-color: yellow;
 text-align: right;
 font-size: x-large;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 border-style: solid ;
-padding-left: 5px;
-padding-right: 5px;
+padding-left: 7px;
+padding-right: 7px;
 align-items: right;
+padding-top: 3px;
+padding-bottom:3px ;
 }
  h1 {
    color:black;
@@ -273,7 +276,7 @@ font-weight: bolder;
  border-right: rgba(128, 128, 128, 0.342);
 }*/
 img {
- margin-left: 250px;
+ margin-left: 270px;
 
 }
 
@@ -284,8 +287,20 @@ img {
 
 }
 
+ /*.row{
+  background-color: mediumturquoise;
+  background-position: left;
+}*/
+
+#new-h4{
+  font-size: x-large;
+  font-family: sans-serif;
+  margin-top: 180px;
+  border-bottom:5px solid mediumturquoise;
+  margin-left: 260px;
+  margin-right: 10%;
 
 
 
-
-
+}
+  
