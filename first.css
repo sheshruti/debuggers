@@ -141,7 +141,7 @@ body  {
    height:150px;
    margin-left: 250px;
    border: 0px solid blue;
-   font-family:fantasy;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    color: black
  }
   .price{
@@ -193,7 +193,7 @@ opacity: 1;
   margin-right: 0px;
 border-radius: 20px;
 border-color:black;
-background-color: yellow;
+background-color: mediumturquoise;
 text-align: right;
 font-size: x-large;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -258,7 +258,7 @@ img {
 
 }
  .new-header2{
- margin-top: 120px;
+ margin-top: 160px;
  color:white;
  text-align: left;
  font-size: x-large;
@@ -274,6 +274,48 @@ opacity: 1;
 
 
  }
+/*#new-button2{
+
+  border-width: 3px;
+  margin-right: 0px;
+border-radius: 20px;
+border-color:black;
+background-color:whitesmoke;
+text-align: right;
+font-size: x-large;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+border-style: solid ;
+padding-left: 7px;
+padding-right: 7px;
+align-items: right;
+padding-top: 3px;
+padding-bottom:3px ;
+}*/
+
+.new-header3{
+  margin-top: 180px;
+  color:white;
+  text-align: left;
+  font-size: x-large;
+  padding: 10px;
+  border: 5px;
+  border-style: double;
+   margin-left: 250px;
+ margin-right: 10%;
+ background-color:black ;
+ border-radius: 20px;
+ font-family:monospace;
+ opacity: 1;
+
+
+
+}
+  
+
+
+
+
+
 
 
 
