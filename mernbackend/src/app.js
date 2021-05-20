@@ -45,7 +45,7 @@ app.post("/signup",async (req, res)=>{
            
            
           const registered = await registerationStudent.save();
-          res.status(201).render("signin");
+          res.status(201).render("index");
         }else{
             res.send("password are not matching")
         }
