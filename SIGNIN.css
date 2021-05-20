@@ -1,4 +1,4 @@
-  
+   
    *{
     margin: 0px;
     padding: 0px;
@@ -350,3 +350,81 @@
 }
 
 
+.effect{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.effect h2{
+  color:#fff;
+  margin: 20px;
+}
+  
+
+    .effect a:hover {
+      border-color: #fff;
+      border: dashed;
+      transition: 2s;
+      border-width: 2px;
+    }
+      
+    .effect a:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: -2px;
+      left: -2px;
+      border: 2px dashed #fff;
+      position: absolute;
+      border-radius: 50%;
+    }
+  .buttons{
+    display: flex;
+    margin-left: 26%;
+    
+  }
+  .footer{
+    margin-top: 20px;
+    height: 200px;
+    background-color: black;
+}
+ .effect a {
+    text-decoration: none !important;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 20px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    border: 2px solid #fff;
+    border: solid;
+  } 
+   .effect i {
+      position: relative;
+      z-index: 3;
+      color: #fff;
+    }
+    
+   .effect a:last-child {
+      margin-right: 0px;
+    }
+    
+   .effect a:before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    
+    .effect i {
+      display: inline-block;
+      vertical-align: middle;
+    } 
+ 
