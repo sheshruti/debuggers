@@ -10,19 +10,20 @@ font-size: 20px;
  align-items: center;
  min-height: 8vh;
  font-family: 'poppins',sans-serif;
- background-color: #37423b;
+ background-color: #343a40;
  }
  .logo {
   color: rgb(226,226,226);
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 18px;
+  text-align: left;
  }
 .nav-links {
   
   display: flex;
   justify-content: space-around;
-width: 40%;
+width: 80%;
 }
 
 .nav-links li{
@@ -143,7 +144,7 @@ body  {
    margin-left: 250px;
    border: 0px solid blue;
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   color: black
+   color: black;
  }
   .price{
     color: black;
@@ -167,7 +168,7 @@ body  {
   margin-left: 250px;
 margin-right: 10%;
 margin-top: 5px;
-background-color:#37423b ;
+background-color:#343a40 ;
 border-radius: 20px;
 font-family:monospace;
 opacity: 1;
@@ -192,20 +193,21 @@ opacity: 1;
 #new-button {
   border-width: 3px;
   margin-right: 0px;
-border-radius: 20px;
+border-radius: 0px;
 border-color:black;
 background-color: #ffc107;
-text-align: right;
+
 font-size: x-large;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 border-style: solid ;
 padding-left: 7px;
-
+margin-right: 0px;
 
 padding-right: 7px;
-align-items: right;
-padding-top: 3px;
-padding-bottom:3px ;
+margin-bottom: 20px;
+padding-top: 5px;
+padding-bottom:5px ;
+margin-top: 10px;
 }
  h1 {
    color:black;
@@ -270,7 +272,7 @@ img {
  border-style: double;
   margin-left: 250px;
 margin-right: 10%;
-background-color:#37423b ;
+background-color:#343a40 ;
 border-radius: 20px;
 font-family:monospace;
 opacity: 1;
@@ -305,7 +307,7 @@ padding-bottom:3px ;
   border-style: double;
    margin-left: 250px;
  margin-right: 10%;
- background-color:#37423b ;
+ background-color:#343a40 ;
  border-radius: 20px;
  font-family:monospace;
  opacity: 1;
@@ -314,7 +316,12 @@ margin-bottom: 40px;
 
 }
   
-
+.new-navlinks{
+  display: flex;
+  margin-left: -100px;
+  margin-top: 20px;
+  width: 30%;
+}
 
 
 
