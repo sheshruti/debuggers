@@ -22,11 +22,11 @@ body {
 .sidenav {
   height: 100%;
   width: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 140px;
   left: 0;
-  background-color: #37423b;
+  background-color: #343a40;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -73,7 +73,7 @@ form.example input[type=text] {
   width: 80%;
   background: #f1f1f1;
   margin-bottom: 10px;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: 30px;
 }
 
@@ -87,7 +87,7 @@ form.example button {
   border: 1px solid white;
   border-left: none;
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: none;
 }
 
@@ -109,30 +109,30 @@ form.example::after {
          <h3 > USED BOOKS</h3>
         
         </div>
-        <form class="example"    action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+        
         <ul  class="nav-links">
 
-              <li >
+              <li class="new-navlinks" >
                 <a href="#"> <i class="fas fa-home"></i>Home</a>
-              </li>
-              <li>
                 <a href="#"> <i class="fas fa-address-card"></i>About us</a>
-              </li>
-              
-              
-              <li>
                 <a href="#"> <i class="fab fa-sellcast"></i>Sell Old Books</a>
               </li>
+              
+            
+              <form class="example"    action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+
+
               <li>
                 <button id="new-button" type="button">sign in</button>
+                
+                  <button id="new-button" type="button">sign up</button>
+                
               </li>
               
-              <li>
-                <button id="new-button" type="button">sign up</button>
-              </li>
+              
 
 
         </ul>
@@ -158,9 +158,9 @@ form.example::after {
     <a href="#">Biographies & Memoirs</a>
     <a href="#"> Bussiness & Investing</a>
     <a href="#">Children's Books</a>
-    <a href="#">Comics</a>
-    <a href="#">Computer & Technology</a>
-    <a href="#">Cookery & Food</a> 
+    <a href="#">Comics</a><br>
+    <a href="#">Computer & Technology</a><br><br><br><br>
+    <a href="#">Cookery & Food</a> <br><br>
   </div>
   
   
