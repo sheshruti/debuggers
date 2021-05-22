@@ -1,0 +1,136 @@
+.effect{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .effect h2{
+    color:#fff;
+    margin: 20px;
+  }
+    
+  
+      .effect a:hover {
+        border-color: #fff;
+        border: dashed;
+        transition: 2s;
+        border-width: 2px;
+      }
+        
+      .effect a:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: -2px;
+        left: -2px;
+        border: 2px dashed #fff;
+        position: absolute;
+        border-radius: 50%;
+      }
+    .buttons{
+      display: flex;
+      margin-left: 26%;
+      
+    }
+    .footer{
+      margin-top: 10px;
+      height: 200px;
+      background-color: black;
+  }
+   .effect a {
+      text-decoration: none !important;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 20px;
+      font-size: 20px;
+      overflow: hidden;
+      position: relative;
+      color: #fff;
+      border: 2px solid #fff;
+      border: solid;
+    } 
+     .effect i {
+        position: relative;
+        z-index: 3;
+        color: #fff;
+      }
+      
+     .effect a:last-child {
+        margin-right: 0px;
+      }
+      
+     .effect a:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+      
+      .effect i {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .footer{
+    margin-top: 2px;
+    height: 150px;
+    background-color: #343a40;
+    bottom: 0px;
+  }
+   
+  
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.title h2{
+    background-color: #ffc107;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    text-decoration: underline;
+}
+.books{
+    display:flex ;
+    flex-direction: row;
+    
+    padding:5px;
+    display: flex;
+}
+.each{
+    margin: 5px 20px 5px 20px;
+    width: 20%;
+    position: relative;
+    border: solid;
+    border-color: #343a40;
+    border-width: 1px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+.each img{
+    position:relative;
+    height:70%;
+    width: 100%;
+}
+.each h4{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    margin-top: 5px;
+    
+}
+.desc h4:hover{
+    text-decoration: underline;
+}
