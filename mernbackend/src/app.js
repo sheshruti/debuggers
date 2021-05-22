@@ -30,6 +30,9 @@ app.get("/", (req, res) => {
 app.get("/signup", (req, res)=>{
     res.render("signup")
 });
+app.get("/ebooks", (req, res)=>{
+    res.render("ebooks")
+});
 app.get("/logout", auth, (req, res) => {
     try {
         res.clearCookie("jwt");
@@ -125,3 +128,4 @@ app.post("/signin",async(req,res)=>{
 app.listen(port, () => {
     console.log(  `http://localhost:${port}`);
 })
+
