@@ -61,7 +61,7 @@ app.post("/signup",async (req, res)=>{
            const token = await registerationStudent.generateAuthToken();
            console.log("the token"+token);
            res.cookie("jwt", token,{
-               expires:new Date(Date.now()+ 100000)
+               expires:new Date(Date.now()+ 500000)
            });
            
            
@@ -95,14 +95,14 @@ app.post("/signin",async(req,res)=>{
      const token = await usermail.generateAuthToken();
      console.log("the token"+token);
      res.cookie("jwt", token,{
-         expires:new Date(Date.now()+ 100000)
+         expires:new Date(Date.now()+ 500000)
 
      });
      app.get("/firsthand", auth,(req,res)=>{
         res.render("firsthand",{firstname: firstname ,sign_in:"logout" ,sign_up:" " ,signin:"logout", login:true})
     });
     app.get("/secondhand", auth,(req,res)=>{
-        res.render("secondhand",{firstname: firstname ,sign_in:"logout" ,sign_up:" " ,signin:"logout", login:true})
+        res.render("secondhand",{firstname: firstname ,sign_in:"logout" ,signin:"logout", login:true})
     });
           
 
