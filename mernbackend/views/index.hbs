@@ -1,300 +1,391 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width= device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" /> 
-     <title> GET SECOND HAND BOOKS</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-     
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
+<title>Random</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1", shrink-to-fit="no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 140px;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
-
-
-* {
-  box-sizing: border-box;
-}
-
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid yellow;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-  margin-bottom: 10px;
-  margin-top: 5px;
-  margin-left: 30px;
-}
-
-form.example button {
-  float: left;
-  width: 10%;
-  padding: 10px;
-  background-color:green;
-  color: white;
-  font-size: 17px;
-  border: 1px solid white;
-  border-left: none;
-  cursor: pointer;
-  margin-top: 5px;
-  margin-left: none;
-}
-
-form.example button:hover {
-  background: green;
-}
-
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
 
 </head>
-<body> 
-    <nav>
-        <div class="logo">
-         <h3 > USED BOOKS</h3>
-        
-        </div>
-        <form class="example"    action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-        <ul  class="nav-links">
-
-              <li >
-                <a href="#"> <i class="fas fa-home"></i>Home</a>
-              </li>
-              <li>
-                <a href="#"> <i class="fas fa-address-card"></i>About us</a>
-              </li>
-              
-              
-              <li>
-                <a href="#"> <i class="fab fa-sellcast"></i>Sell Old Books</a>
-              </li>
-              <li>
-                <a href="/signin"><i class="fab fa-sellcast"></i>login </a>
-              </li>
-              <li>
-             <a href="/signup"><i class="fab fa-sellcast"></i>signup </a>
-              </li>
-
-
-
-        </ul>
-        <div class="burger">
-           <div class="line 1"></div>
-           <div class="line 2"></div>
-           <div class="line 3"></div>
-        </div>
-    </nav>
-   <script src="script/web.js"></script>
-  
-   <h1> <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Engineering</a>
-    <a href="#">Fiction & Literature</a>
-    <a href="#">Foreign Language & study Aids </a>
-    <a href="#">Health,Mind & Body</a>
-    <a href="#">History</a>
-    <a href="#">Religion & sprituality</a>
-    <a href="#">Romance</a>
-    <a href="#">Self-Help</a>
-    <a href="#">Arts & Entertainment</a>
-    <a href="#">Biographies & Memoirs</a>
-    <a href="#"> Bussiness & Investing</a>
-    <a href="#">Children's Books</a>
-    <a href="#">Comics</a>
-    <a href="#">Computer & Technology</a>
-    <a href="#">Cookery & Food</a> 
-  </div>
-  
-  
-  <span class="new-content" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Contents</span>
-  
-  <script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+<style>
+  h6{
+    color: #ccc;
   }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0px";
+  h5{
+    color: azure;
   }
-  </script>
-      </h1>
-   <h2 class="new-header"> Engineering </h2>  
-   <h3 id="new-h3">
-     computer science and engineering 
-   </h3> 
-   <div class="row">
-     
-        <div id="div-1" >
-          <div class="photo"><img src="images/Annotation 2021-05-18 122257.png" alt="blackbook" ></div>
-          <div class="desc">Big Data, Black Book: Covers Hadoop 2, MapReduce, Hive, YARN, Pig, R and Data Visualization</div>
-          <div class="price">175Rs/-</div>
-          
-         </div>
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  .row{
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .counts .counters span {
+    font-size: 48px;
+    display: block;
+    color: #ffc107;
+    font-weight: 700;
+  }
+  .counts .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #37423b;
+   }
 
-         <div id="div-1">
-          <div class="photo" ><img src="images/Annotation 2021-05-18 122453.png" alt="crack coding interview" ></div>
-          <div class="desc">Cracking the Coding Interview: 189 Programming Questions and Solutions </div>
-          <div class="price">1500Rs/-</div>
-          
-
-         </div>
-
-        <div id="div-1" >
-          <div class="photo"> <img src="images/Annotation 2021-05-18 122305.png" alt="data structures"></div>
-          <div class="desc">Big Data and Analytics, 2ed Paperback – 1 January 2019
-            by Subhashini Chellappan Seema Acharya (Author)</div>
-          <div class="price">260Rs/-</div>
-         
-         
-
-        </div>
-         <div id="div-1">
-          <div class="photo"> <img src="images/Annotation 2021-05-18 122618 (2).png" alt="abcd"></div>
-          <div class="desc"> Machine Learning using Python Paperback – 1 January 2019
-            by U Dinesh Kumar Manaranjan Pradhan (Author)</div>
-          <div class="price"> 300Rs/-</div>
-          
-
-         </div>
-
-  </div> 
-
-  <h3 id="new-h4">
-    Electrical , Electronics & Communication
-  </h3> 
-  <div class="row">
+  .head{
+    background-color: #ffc107;
+    border-radius: 5px;
+    margin-top: -40px;
+    padding-top: 15px;
+    padding-bottom: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .Effect-1{
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 7px 0;
     
-       <div id="div-1" >
-         <div class="photo"><img src="images/Annotation 2021-05-18 123235.png" alt="modern digital electronics" ></div>
-         <div class="desc">Modern Digital Electronics | Fourth Edition Paperback – 27 July 2009
-          by R P Jain  (Author) </div>
-         <div class="price">290Rs/-</div>
-         
-        </div>
-
-        <div id="div-1">
-         <div class="photo" ><img src="images/Annotation 2021-05-18 123139.png" alt="power electronics" ></div>
-         <div class="desc">Power Electronics: Converters Applications and Design, Media Enhanced, 3ed Paperback – 1 </div>
-         <div class="price">380Rs/-</div>
-         
-
-        </div>
-
-       <div id="div-1" >
-         <div class="photo"> <img src="images/Annotation 2021-05-18 123057.png" alt="optical fibre communication"></div>
-         <div class="desc">Optical Fiber Communication (SIE)
-          by Gerd Keiser (Author)</div>
-         <div class="price">130Rs/-</div>
-        
-        
-
-       </div>
-        <div id="div-1">
-         <div class="photo"> <img src="images/Annotation 2021-05-18 123157.png" alt="Electrical Engineering"></div>
-         <div class="desc"> Fundamentals of Electrical Drives 
-          by Gopal K. Dubey (Author)</div>
-         <div class="price"> 100Rs/-</div>
-         
-
-        </div>
-
- </div>
- <h3 id="new-h4">
-  Mechanical Engineering
-</h3> 
-<div class="row">
+    border-bottom: 1px solid #ccc;
+  }
+  .Effect-1 ~ .Focus-border{
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ffc107;
+    transition: 0.4s;
+  }
+  .Effect-1:focus ~ .Focus-border{
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+  }
   
-     <div id="div-1" >
-       <div class="photo"><img src="images/Annotation 2021-05-19 151538.png" alt="corrosion protection" ></div>
-       <div class="desc"> Corrosion Protection against Carbon Dioxide 
-        by Michael SchÃ¼tze (Editor), Bernd Isecke (Editor), Roman Bender (Editor)</div> 
-       <div class="price">5000Rs/-</div>
-       
+  
+
+</style>
+<body>
+
+  
+<!--1. NAVIGATION -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a href="#" class="navbar-brand"></a>
+  <img src="2.png" height="50" alt="BOOKS">
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <div class="navbar-nav">
+          <a href="#" class="nav-item nav-link active text-light"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+          <a href="#Aboutus" class="nav-item nav-link text-light">About us</a>
+          <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Books</a>   <!-- Dropdown -->
+              <div class="dropdown-menu">
+                  <a href="#firsthand" class="dropdown-item">First Hand Books</a>
+                  <a href="#secondhand" class="dropdown-item">Second Hand Books</a>
+                  <a href="#pdfs" class="dropdown-item">Free Books</a>
+              </div>
+          </div>
       </div>
-
-      <div id="div-1">
-       <div class="photo" ><img src="images/Annotation 2021-05-19 151606.png" alt="cellular ceramics" ></div>
-       <div class="desc">Cellular Ceramics: Structure, Manufacturing, Properties and Applications 
-        by Michael Scheffler (Editor), Paolo Colombo (Editor)</div>
-       <div class="price">4000Rs/-</div>
-       
-
-      </div>
-
-     <div id="div-1" >
-       <div class="photo"> <img src="images/Annotation 2021-05-19 151656.png" alt="Mechanical Engineering"></div>
-       <div class="desc">Mechanical Engineering: Conventional and Objective Types (2018-19 Session)
-        by R.S. Khurmi  (Author)</div>
-       <div class="price">250Rs/-</div>
+      <form class="form-inline">                                                                         <!-- Search BAR-->
+          <div class="input-group">                    
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-append">
+                  <button type="button" class="btn btn-warning"><i class="fa fa-search fa-search"></i></button>
+              </div>
+          </div>
+      </form>
+      {{#if login}}
+      <h6>{{firstname}}</h6>
+      {{/if}}
       
-      
-
-     </div>
-      <div id="div-1">
-       <div class="photo"> <img src="images/Annotation 2021-05-19 151731.png" alt="fluid mechanics"></div>
-       <div class="desc">A Textbook of Fluid Mechanics and Hydraulic Machines
-        by R.K. Bansal (Author) </div>
-       <div class="price"> 350Rs/-</div>
-       
-
+      <div class="navbar-nav">
+        <a href="/{{#if login}}{{signin}}{{/if}}" class="nav-item nav-link text-light"> {{#if login}}   <h5> {{sign_in}}</h5> {{/if}}</a>
+        
+        <a href="/{{#if login}}{{signup}}{{/if}} " class="nav-item nav-link text-light"> {{#if login}}<h5>{{sign_up}}</h5>{{/if}} </a>
+        
       </div>
 
+
+  </div>
+</nav>
+
+  <!--2. SLIDE SHOW -->
+ 
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+  
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/books1.jpg" alt="books">
+      </div>
+      <div class="carousel-item">
+        <img src="images/books3.jpg" alt="books">
+      </div>
+      <div class="carousel-item">
+        <img src="images/books1.jpg" alt="books">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">                   <!-- Left and Right Controls -->
+      <span class="carousel-control-prev-icon"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  <!--3. Books Counter-->
+  <div class="jumbotron">
+  <section id="counts" class="counts section-bg">
+    <div class="container">
+
+      <div class="row counters">
+
+        <div class="col-lg-4 col-6 text-center">
+          <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="0" class="purecounter">106</span>
+          <p>Latest</p>
+        </div>
+
+        <div class="col-lg-4 col-6 text-center">
+          <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="0" class="purecounter">64</span>
+          <p>Second Hand Books</p>
+        </div>
+
+        <div class="col-lg-4 col-6 text-center">
+          <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="0" class="purecounter">42</span>
+          <p>Pdfs</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
+  
+  <br>
+  <hr class="my-2">
+
+  <!--4. Content-->
+  <div class="row">
+  <div class="card col-lg-4" style="width: 18rem;" id="firsthand">
+    <img class="card-img-top" src="images/Essential-Books.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">First Hand Books</h5>
+      <p class="card-text">Here you will find the latest books.</p>
+      <a href="/{{#if login}}{{firsthandbook}}{{/if}}" class="btn btn-warning">Explore</a>
+    </div>
+  </div>
+  <div class="card col-lg-4" style="width: 18rem;" id="secondhand">
+    <img class="card-img-top" src="images/essential books.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Second Hand Books</h5>
+      <p class="card-text">Here you will find the second hand books.</p>
+      <a href="/{{#if login}}{{secondhandbook}}{{/if}}" class="btn btn-warning">Explore</a>
+    </div>
+  </div>
+  <div class="card col-lg-4" style="width: 18rem;" id="pdfs">
+    <img class="card-img-top" src="images/books2.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Pdfs</h5>
+      <p class="card-text">Here you will find the pdfs.</p>
+      <a href="#" class="btn btn-warning">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!--5. About us -->
+  <div class="jumbotron">
+  <div class="Profile" id="Aboutus">
+    <div class="row">
+        <div class="col-lg-3 text-center">
+          <img class="rounded-circle" src="images/anime boy.jpeg" alt="Profile Picture" width="140" height="140">
+          <h2>Aditya</h2>
+          <p>Web Designer</p>
+          <p><a class="btn btn-warning" href="#" role="button">View details »</a></p>
+        </div>
+
+        <div class="col-lg-3 text-center">
+          <img class="rounded-circle" src="images/anime girl.jpeg" alt="Profile Picture" width="140" height="140">
+          <h2>Shruti</h2>
+          <p>Web Designer</p>
+          <p><a class="btn btn-warning" href="#" role="button">View details »</a></p>
+        </div>
+
+        <div class="col-lg-3 text-center">
+          <img class="rounded-circle" src="images/anime boy.jpeg" alt="Profile Picture" width="140" height="140">
+          <h2>Shashi</h2>
+          <p>Web Designer</p>
+          <p><a class="btn btn-warning" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <img class="rounded-circle" src="images/anime girl.jpeg" alt="Profile Picture" width="140" height="140">
+          <h2>Lucky</h2>
+          <p>Web Designer</p>
+          <p><a class="btn btn-warning" href="#" role="button">View details »</a></p>
+        </div>
+      </div>
+  </div>
+  </div>
+<br>
+<br>
+<br>
+<hr>
+<!-- 6. Contact Form -->
+<section class="contact">
+  <div class="container py-5 ">
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="head text-center text-black">
+                  <h3>Contact Us</h3>
+                </div>
+              </div>
+            </div>
+            <div class="form p-3">
+              <div class="form-row my-5">
+                <div class="col-lg-6">
+                  <input type=text class="Effect-1" placeholder="First Name">
+                  <span class="Focus-border"></span>
+                </div>
+                <div class="col-lg-6">
+                  <input type=text class="Effect-1" placeholder="Last Name">
+                  <span class="Focus-border"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-12 pb-4">
+                  <input type=text class="Effect-1" placeholder="Email Address">
+                  <span class="Focus-border"></span>
+                </div>
+                </div>
+              <div class="form-row">
+                <div class="col-lg-12 pt-5">
+                  <input type=text class="Effect-1" placeholder="Your message">
+                  <span class="Focus-border"></span>
+                </div>
+                </div>
+                <div class="form-row pt-4">
+                  <div class="offset-8 col-lg-4">
+                    <button class="btn btn-warning">Send Message</button>
+                  </div>
+                  </div>
+                  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--<footer class="container padding-32">
+  <h4>Follow Us</h4>
+  <a class="btn btn-large-primary" href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="btn btn-large-primary" href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="btn btn-large-primary" href="#" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="btn btn-large-primary" href="#" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a> -->
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
 
 
 
+ <!--Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </body>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!----
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+ crossorigin="anonymous"></script>                              
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity=
+"sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw
+==" crossorigin="anonymous"></script>
 </html>
+--->

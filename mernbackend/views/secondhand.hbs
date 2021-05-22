@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/secondhand.css" /> 
+     <title> GET SECOND HAND BOOKS</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 140px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid yellow;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+form.example button {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  background-color:mediumturquoise;
+  color: white;
+  font-size: 17px;
+  border: 1px solid white;
+  border-left: none;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: none;
+}
+
+form.example button:hover {
+  background: mediumturquoise;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+</head>
+<body> 
+    <nav>
+        <div class="logo">
+         <h3 > USED BOOKS</h3>
+        
+        </div>
+        <form class="example"    action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+         {{#if login}}
+      <h6>{{firstname}}</h6>
+      {{/if}}
+        <ul  class="nav-links">
+
+              <li >
+                <a href="/"> <i class="fas fa-home"></i>Home</a>
+              </li>
+              <li>
+                <a href="#"> <i class="fas fa-address-card"></i>About us</a>
+              </li>
+              
+              
+              <li>
+                <a href="#"> <i class="fab fa-sellcast"></i>Sell Old Books</a>
+              </li>
+              <li>
+               <a href="/{{#if login}}{{signin}}{{/if}}"> <button id="new-button" type="button"> {{#if login}} <h5> {{sign_in}} {{/if}}</h5></button></a>
+              </li>
+              
+              <li>
+                <a href="/{{#if login}}{{signup}}{{/if}}"><button id="new-button" type="button"> {{#if login}} <h5>{{sign_up}} </h5>{{/if}}
+              
+                </button></a>
+              </li>
+
+
+        </ul>
+        <div class="burger">
+           <div class="line 1"></div>
+           <div class="line 2"></div>
+           <div class="line 3"></div>
+        </div>
+    </nav>
+   <script src="web.js"></script>
+  
+   <h1> <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Engineering</a>
+    <a href="#">Fiction & Literature</a>
+    <a href="#">Foreign Language & study Aids </a>
+    <a href="#">Health,Mind & Body</a>
+    <a href="#">History</a>
+    <a href="#">Religion & sprituality</a>
+    <a href="#">Romance</a>
+    <a href="#">Self-Help</a>
+    <a href="#">Arts & Entertainment</a>
+    <a href="#">Biographies & Memoirs</a>
+    <a href="#"> Bussiness & Investing</a>
+    <a href="#">Children's Books</a>
+    <a href="#">Comics</a>
+    <a href="#">Computer & Technology</a>
+    <a href="#">Cookery & Food</a> 
+  </div>
+  
+  
+  <span class="new-content" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Contents</span>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+  }
+  </script>
+      </h1>
+   <h2 class="new-header"> Engineering </h2>  
+   <h3 id="new-h3">
+     computer science and engineering 
+   </h3> 
+   <div class="row">
+     
+        <div id="div-1" >
+          <div class="photo"><img src="Annotation 2021-05-18 122257.png" alt="blackbook" ></div>
+          <div class="desc">Big Data, Black Book: Covers Hadoop 2, MapReduce, Hive, YARN, Pig, R and Data Visualization</div>
+          <div class="price">175Rs/-</div>
+          
+         </div>
+
+         <div id="div-1">
+          <div class="photo" ><img src="Annotation 2021-05-18 122453.png" alt="crack coding interview" ></div>
+          <div class="desc">Cracking the Coding Interview: 189 Programming Questions and Solutions </div>
+          <div class="price">1500Rs/-</div>
+          
+
+         </div>
+
+        <div id="div-1" >
+          <div class="photo"> <img src="Annotation 2021-05-18 122305.png" alt="data structures"></div>
+          <div class="desc">Big Data and Analytics, 2ed Paperback – 1 January 2019
+            by Subhashini Chellappan Seema Acharya (Author)</div>
+          <div class="price">260Rs/-</div>
+         
+         
+
+        </div>
+         <div id="div-1">
+          <div class="photo"> <img src="Annotation 2021-05-18 122618 (2).png" alt="abcd"></div>
+          <div class="desc"> Machine Learning using Python Paperback – 1 January 2019
+            by U Dinesh Kumar Manaranjan Pradhan (Author)</div>
+          <div class="price"> 300Rs/-</div>
+          
+
+         </div>
+
+  </div> 
+
+  <h3 id="new-h4">
+    Electrical , Electronics & Communication
+  </h3> 
+  <div class="row">
+    
+       <div id="div-1" >
+         <div class="photo"><img src="Annotation 2021-05-18 123235.png" alt="modern digital electronics" ></div>
+         <div class="desc">Modern Digital Electronics | Fourth Edition Paperback – 27 July 2009
+          by R P Jain  (Author) </div>
+         <div class="price">290Rs/-</div>
+         
+        </div>
+
+        <div id="div-1">
+         <div class="photo" ><img src="Annotation 2021-05-18 123139.png" alt="power electronics" ></div>
+         <div class="desc">Power Electronics: Converters Applications and Design, Media Enhanced, 3ed Paperback – 1 </div>
+         <div class="price">380Rs/-</div>
+         
+
+        </div>
+
+       <div id="div-1" >
+         <div class="photo"> <img src="Annotation 2021-05-18 123057.png" alt="optical fibre communication"></div>
+         <div class="desc">Optical Fiber Communication (SIE)
+          by Gerd Keiser (Author)</div>
+         <div class="price">130Rs/-</div>
+        
+        
+
+       </div>
+        <div id="div-1">
+         <div class="photo"> <img src="Annotation 2021-05-18 123157.png" alt="Electrical Engineering"></div>
+         <div class="desc"> Fundamentals of Electrical Drives 
+          by Gopal K. Dubey (Author)</div>
+         <div class="price"> 100Rs/-</div>
+         
+
+        </div>
+
+ </div>
+ <h3 id="new-h4">
+  Mechanical Engineering
+</h3> 
+<div class="row">
+  
+     <div id="div-1" >
+       <div class="photo"><img src="Annotation 2021-05-19 151538.png" alt="corrosion protection" ></div>
+       <div class="desc"> Corrosion Protection against Carbon Dioxide 
+        by Michael SchÃ¼tze (Editor), Bernd Isecke (Editor), Roman Bender (Editor)</div> 
+       <div class="price">5000Rs/-</div>
+       
+      </div>
+
+      <div id="div-1">
+       <div class="photo" ><img src="Annotation 2021-05-19 151606.png" alt="cellular ceramics" ></div>
+       <div class="desc">Cellular Ceramics: Structure, Manufacturing, Properties and Applications 
+        by Michael Scheffler (Editor), Paolo Colombo (Editor)</div>
+       <div class="price">4000Rs/-</div>
+       
+
+      </div>
+
+     <div id="div-1" >
+       <div class="photo"> <img src="Annotation 2021-05-19 151656.png" alt="Mechanical Engineering"></div>
+       <div class="desc">Mechanical Engineering: Conventional and Objective Types (2018-19 Session)
+        by R.S. Khurmi  (Author)</div>
+       <div class="price">250Rs/-</div>
+      
+      
+
+     </div>
+      <div id="div-1">
+       <div class="photo"> <img src="Annotation 2021-05-19 151731.png" alt="fluid mechanics"></div>
+       <div class="desc">A Textbook of Fluid Mechanics and Hydraulic Machines
+        by R.K. Bansal (Author) </div>
+       <div class="price"> 350Rs/-</div>
+       
+
+      </div>
+
+</div>
+<h2 class="new-header2"> Fiction & Literature  </h2>
+ 
+<div class="row">
+  
+     <div id="div-1" >
+       <div class="photo"><img src="Annotation 2021-05-20 093314.png" alt="The Alchemist" ></div>
+       <div class="desc">The Alchemist 
+        by Paulo Coelho  (Author)</div> 
+       <div class="price">135Rs/-</div>
+       
+      </div>
+
+      <div id="div-1">
+       <div class="photo" ><img src="Annotation 2021-05-20 093034.png" alt="grandma's bag of stories" ></div>
+       <div class="desc">Grandma's Bag of Stories: Collection of 20+ Illustrated short stories, traditional Indian folk tales for all ages for children of all ages 
+        by Sudha Murty </div>
+       <div class="price">110Rs/-</div>
+       
+
+      </div>
+
+     <div id="div-1" >
+       <div class="photo"> <img src="Annotation 2021-05-20 093353.png" alt="Think and grow rich"></div>
+       <div class="desc">Think and Grow Rich Paperback – 1 January 2014
+        by Napoleon Hill  (Author)</div>
+       <div class="price">90Rs/-</div>
+      
+      
+
+     </div>
+      <div id="div-1">
+       <div class="photo"> <img src="Annotation 2021-05-20 093412.png" alt="Ruskin bond"></div>
+       <div class="desc">Great Stories for Children Paperback – 1 November 2011
+        by Ruskin Bond  (Author) </div>
+       <div class="price"> 110Rs/-</div>
+       
+
+      </div>
+
+</div>
+<h2 class="new-header3"> Bussiness & Investment </h2>
+ 
+<div class="row">
+  
+     <div id="div-1" >
+       <div class="photo"><img src="Annotation 2021-05-20 121724.png" alt="Stocks to Riches" ></div>
+       <div class="desc">Stocks to Riches: Insights on Investor Behaviour Paperback – 1 July 2017
+        by Parag Parikh  (Author)</div> 
+       <div class="price">225Rs/-</div>
+       
+      </div>
+
+      <div id="div-1">
+       <div class="photo" ><img src="Annotation 2021-05-20 121531.png" alt="The unusual billionares" ></div>
+       <div class="desc">The Unusual Billionaires Paperback – 31 August 2016
+        by Saurabh Mukherjea  (Author)</div>
+       <div class="price">180Rs/-</div>
+       
+
+      </div>
+
+     <div id="div-1" >
+       <div class="photo"> <img src="Annotation 2021-05-20 121653.png" alt="value investing"></div>
+       <div class="desc">Value investing and behavioral finance: Insights into indian stock market realities 
+        by Parag Parikh  (Author)</div>
+       <div class="price">350Rs/-</div>
+      
+      
+
+     </div>
+      <div id="div-1">
+       <div class="photo"> <img src="Annotation 2021-05-20 122153.png" alt="the joy of compounding"></div>
+       <div class="desc">The Joys Of Compounding: The Passionate Pursuit of Lifelong Learning Paperback – 20 November 2020
+        by Gautam Baid  (Author) </div>
+       <div class="price"> 180Rs/-</div>
+       
+
+      </div>
+
+</div>
+<br>
+<br>
+<br>
+<div class="footer">
+  <div class="effect">
+    
+      <div><h2>Follow Us</h2></div>
+      <div class="buttons">
+        <a href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" class="tw" title="Join us on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" class="g-plus" title="Join us on Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        <a href="#" class="dribbble" title="Join us on Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+        <a href="#" class="vimeo" title="Join us on Vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+      <a href="#" class="pinterest" title="Join us on Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+        <a href="#" class="insta" title="Join us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" class="in" title="Join us on Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    
+    </div>
+
+</body>
+</html>

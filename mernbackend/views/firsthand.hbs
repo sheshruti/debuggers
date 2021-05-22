@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Random</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1", shrink-to-fit="no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
+integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+.effect{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.effect h2{
+  color:#fff;
+  margin: 20px;
+}
+  
+
+    .effect a:hover {
+      border-color: #fff;
+      border: dashed;
+      transition: 2s;
+      border-width: 2px;
+    }
+      
+    .effect a:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: -2px;
+      left: -2px;
+      border: 2px dashed #fff;
+      position: absolute;
+      border-radius: 50%;
+    }
+  .buttons{
+    display: flex;
+    margin-left: 26%;
+    
+  }
+  .footer{
+    margin-top: 20px;
+    height: 200px;
+    background-color: black;
+}
+ .effect a {
+    text-decoration: none !important;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 20px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    border: 2px solid #fff;
+    border: solid;
+  } 
+   .effect i {
+      position: relative;
+      z-index: 3;
+      color: #fff;
+    }
+    
+   .effect a:last-child {
+      margin-right: 0px;
+    }
+    
+   .effect a:before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    
+    .effect i {
+      display: inline-block;
+      vertical-align: middle;
+    } 
+   
+</style>
+<body>
+<!--1. NAVIGATION -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a href="#" class="navbar-brand"></a>
+  <img src="2.png" height="50" alt="BOOKS">
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <div class="navbar-nav">
+          <a href="new.html" class="nav-item nav-link active text-light"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+          <a href="#Aboutus" class="nav-item nav-link text-light"></a>
+          <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Contents</a>   <!-- Dropdown -->
+              <div class="dropdown-menu">
+                  <a href="#science" class="dropdown-item">Science</a>
+                  <a href="#maths" class="dropdown-item">Maths</a>
+                  <a href="#english" class="dropdown-item">English</a>
+              </div>
+          </div>
+      </div>
+      <form class="form-inline">                                                                         <!-- Search BAR-->
+          <div class="input-group">                    
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-append">
+                  <button type="button" class="btn btn-warning"><i class="fa fa-search fa-search"></i></button>
+              </div>
+          </div>
+      </form>
+       {{#if login}}
+      <h6>{{firstname}}</h6>
+      {{/if}}
+      <div class="navbar-nav">
+        <a href="/{{#if login}}{{signin}}{{/if}} " class="nav-item nav-link text-light">{{#if login}} <h5> {{sign_in}}</h5> {{/if}}</a>
+        <a href="/{{#if login}}{{signup}}{{/if}}" data-toggle="dropdown" class="btn btn-warning dropdown-toggle sign-up-btn" aria-expanded="true"> {{#if login}} <h5>{{Sign_up}}</h5>{{/if}} </a>
+        </div>
+        </div>
+        </nav>
+        <br>
+        <br>
+
+      <!-- Content Slider----------------------------------------------------------------------------------------------------->
+<h2 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; padding-left: 255px; padding-bottom: 10px;"
+id="science"><b>Science</b></h2>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<div id="slider" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						 <div class="container">
+						 	<div class="row">
+						 		<div class="col-sm-12 col-lg-4">
+						 			<div class="card" style="width: 300px; margin-left: 48px;">
+						 				<img src="books1.jpg" class="card-img-top">
+						 				<div class="card-body">
+						 					<h4 class="card-title">Why you should use skin masks ?</h4>
+						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+						 					<button type="button" class="btn btn-warning">Read More</button>
+						 				</div>
+					      	</div>
+						 		</div>
+						 		<div class="col-sm-12 col-lg-4">
+						 			<div class="card" style="width: 300px; margin-left: 48px;">
+						 				<img src="books2.jpg" class="card-img-top">
+						 				<div class="card-body">
+						 					<h4 class="card-title">Why you should use skin masks ?</h4>
+						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+						 					<button type="button" class="btn btn-warning">Read More</button>
+						 				</div>
+						 		  </div>
+						 		</div>
+						 		<div class="col-sm-12 col-lg-4">
+						 			<div class="card" style="width: 300px; margin-left: 48px;">
+						 				<img src="books3.jpg" class="card-img-top">
+						 				<div class="card-body">
+						 					<h4 class="card-title">Ncert class 12th physics</h4>
+						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+						 					<button type="button" class="btn btn-warning">Read More</button>
+					        	</div>	
+						 			</div>
+						 		</div>						 		
+						 	</div>						 	
+						 </div>						
+					</div>
+					<div class="carousel-item">
+						 <div class="container">
+						 	<div class="row">
+						 		<div class="col-sm-12 col-lg-4">
+						 			<div class="card" style="width: 300px; margin-left: 48px;">
+						 				<img src="book6.jpg" class="card-img-top">
+						 				<div class="card-body">
+						 					<h4 class="card-title">Why you should use skin masks ?</h4>
+						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+						 					<button type="button" class="btn btn-warning">Read More</button>						 					
+						 				</div>
+						 			</div>
+						 		</div>
+						 		<div class="col-sm-12 col-lg-4">
+						 			<div class="card" style="width: 300px; margin-left: 48px;">
+						 				<img src="Essential-books.jpeg" class="card-img-top">
+						 				<div class="card-body">
+						 					<h4 class="card-title">Why you should use skin masks ?</h4>
+						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+						 					<button type="button" class="btn btn-warning">Read More</button>						 					
+						 				</div>						 				
+						 			</div>						 			
+						 		</div>
+						 		<div class="col-sm-12 col-lg-4">
+						 			<div class="card" style="width: 300px; margin-left: 48px;">
+						 				<img src="essential books.jpeg" class="card-img-top">
+						 				<div class="card-body">
+						 					<h4 class="card-title">Why you should use skin masks ?</h4>
+						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+						 					<button type="button" class="btn btn-warning">Read More</button>				 					
+					 				</div>
+					 			</div>
+					 		</div>
+					 	</div>
+					 </div>
+          </div>
+				</div>
+				<a href="#slider" class="carousel-control-prev" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a href="#slider" class="carousel-control-next" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+  <br>
+  <br>
+
+
+<h2 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; padding-left: 255px; padding-bottom: 10px;" 
+id="maths"><b>Maths</b></h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="slider2" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-sm-12 col-lg-4">
+                     <div class="card" style="width: 300px; margin-left: 48px;">
+                       <img src="books1.jpg" class="card-img-top">
+                       <div class="card-body">
+                         <h4 class="card-title">Why you should use skin masks ?</h4>
+                         <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                         <button type="button" class="btn btn-warning">Read More</button>                         
+                       </div>                       
+                     </div>                     
+                   </div>
+                   <div class="col-sm-12 col-lg-4">
+                     <div class="card" style="width: 300px; margin-left: 48px;">
+                       <img src="books2.jpg" class="card-img-top">
+                       <div class="card-body">
+                         <h4 class="card-title">Why you should use skin masks ?</h4>
+                         <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                         <button type="button" class="btn btn-warning">Read More</button>
+                       </div>                       
+                     </div>
+                   </div>
+                   <div class="col-sm-12 col-lg-4">
+                     <div class="card" style="width: 300px; margin-left: 48px;">
+                       <img src="books3.jpg" class="card-img-top">
+                       <div class="card-body">
+                         <h4 class="card-title">Why you should use skin masks ?</h4>
+                         <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                         <button type="button" class="btn btn-warning">Read More</button>
+                       </div>                       
+                     </div>                     
+                   </div>                   
+                 </div>                 
+               </div>              
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-sm-12 col-lg-4">
+                     <div class="card" style="width: 300px; margin-left: 48px;">
+                       <img src="book6.jpg" class="card-img-top">
+                       <div class="card-body">
+                         <h4 class="card-title">Why you should use skin masks ?</h4>
+                         <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                         <button type="button" class="btn btn-warning">Read More</button>                         
+                       </div>                       
+                     </div>                     
+                   </div>
+                   <div class="col-sm-12 col-lg-4">
+                     <div class="card" style="width: 300px; margin-left: 48px;">
+                       <img src="Essential-books.jpeg" class="card-img-top">
+                       <div class="card-body">
+                         <h4 class="card-title">Why you should use skin masks ?</h4>
+                         <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                         <button type="button" class="btn btn-warning">Read More</button>                         
+                       </div>                       
+                     </div>                     
+                   </div>
+                   <div class="col-sm-12 col-lg-4">
+                     <div class="card" style="width: 300px; margin-left: 48px;">
+                       <img src="essential books.jpeg" class="card-img-top">
+                       <div class="card-body">
+                         <h4 class="card-title">Why you should use skin masks ?</h4>
+                         <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                         <button type="button" class="btn btn-warning">Read More</button>                         
+                       </div>                       
+                     </div>                     
+                   </div>                   
+                 </div>                 
+               </div>
+            </div>            
+          </div>
+          <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href="#slider2" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>          
+        </div>        
+      </div>      
+    </div>    
+  </div>
+<br>
+<br>
+
+
+<h2 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; padding-left: 255px; padding-bottom: 10px;"
+id="english"><b>English</b></h2>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <div id="slider3" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+             <div class="container">
+               <div class="row">
+                 <div class="col-sm-12 col-lg-4">
+                   <div class="card" style="width: 300px; margin-left: 48px;">
+                     <img src="books1.jpg" class="card-img-top">
+                     <div class="card-body">
+                       <h4 class="card-title">Why you should use skin masks ?</h4>
+                       <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                       <button type="button" class="btn btn-warning">Read More</button>                         
+                     </div>                       
+                   </div>                     
+                 </div>
+                 <div class="col-sm-12 col-lg-4">
+                   <div class="card" style="width: 300px; margin-left: 48px;">
+                     <img src="books2.jpg" class="card-img-top">
+                     <div class="card-body">
+                       <h4 class="card-title">Why you should use skin masks ?</h4>
+                       <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                       <button type="button" class="btn btn-warning">Read More</button>
+                     </div>                       
+                   </div>
+                 </div>
+                 <div class="col-sm-12 col-lg-4">
+                   <div class="card" style="width: 300px; margin-left: 48px;">
+                     <img src="books3.jpg" class="card-img-top">
+                     <div class="card-body">
+                       <h4 class="card-title">Why you should use skin masks ?</h4>
+                       <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                       <button type="button" class="btn btn-warning">Read More</button>
+                     </div>                       
+                   </div>                     
+                 </div>                   
+               </div>                 
+             </div>              
+          </div>
+          <div class="carousel-item">
+             <div class="container">
+               <div class="row">
+                 <div class="col-sm-12 col-lg-4">
+                   <div class="card" style="width: 300px; margin-left: 48px;">
+                     <img src="book6.jpg" class="card-img-top">
+                     <div class="card-body">
+                       <h4 class="card-title">Why you should use skin masks ?</h4>
+                       <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                       <button type="button" class="btn btn-warning">Read More</button>                         
+                     </div>                       
+                   </div>                     
+                 </div>
+                 <div class="col-sm-12 col-lg-4">
+                   <div class="card" style="width: 300px; margin-left: 48px;">
+                     <img src="Essential-books.jpeg" class="card-img-top">
+                     <div class="card-body">
+                       <h4 class="card-title">Why you should use skin masks ?</h4>
+                       <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                       <button type="button" class="btn btn-warning">Read More</button>                         
+                     </div>                       
+                   </div>                     
+                 </div>
+                 <div class="col-sm-12 col-lg-4">
+                   <div class="card" style="width: 300px; margin-left: 48px;">
+                     <img src="essential books.jpeg" class="card-img-top">
+                     <div class="card-body">
+                       <h4 class="card-title">Why you should use skin masks ?</h4>
+                       <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                       <button type="button" class="btn btn-warning">Read More</button>                         
+                     </div>                       
+                   </div>                     
+                 </div>                   
+               </div>                 
+             </div>
+          </div>            
+        </div>
+        <a href="#slider3" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slider3" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>          
+      </div>        
+    </div>      
+  </div>    
+</div>
+<div class="footer">
+  <div class="effect">
+    
+      <div><h2>Follow Us</h2></div>
+      <div class="buttons">
+        <a href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" class="tw" title="Join us on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" class="g-plus" title="Join us on Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        <a href="#" class="dribbble" title="Join us on Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+        <a href="#" class="vimeo" title="Join us on Vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+      <a href="#" class="pinterest" title="Join us on Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+        <a href="#" class="insta" title="Join us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" class="in" title="Join us on Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    
+    </div>
+</body>
+</html>
